@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+   
+}
+.hero-image {
+    background-image: url("hero1.png");
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.hero-text {
+    width: 30%;
+    color: white;
+    font-size: 20px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.hero-text > button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius:15px ;
+    padding: 15px 32px;
+}
+button > a {
+    text-decoration: none;
+    color:white;
+}
+.carcards {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 350px 350px;
+    padding: 10px;
+    row-gap: 40px;
+    margin-top: 50px;
+    
+
+}
+
+#car1 {
+    grid-column-start: 2;
+    justify-self: start;
+}
+#car2{
+    grid-column-start: 3 ;
+    justify-self: end;
+}
+#car3 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    justify-self: start;
+
+}
+#car4{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    justify-self: end;
+
+}
+.banner {
+    margin: 20px 5px 20px 5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.footer {
+    margin-top: 30px;
+    background-color: black;
+    height: 30px;
+}
+.designed {
+    color: white;
+    font-weight: lighter;
+    text-align: end;
+
+}
+
+  
+@media screen and (max-width:500px) {
+    /* aligning cards display below 500px width*/
+    .carcards {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*aligning the text in background image below 500px width*/
+    .hero-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
